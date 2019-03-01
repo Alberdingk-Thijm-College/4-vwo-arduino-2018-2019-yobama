@@ -247,8 +247,25 @@ void loop(){
   if (buttonState == HIGH && digitalRead(bb1) == HIGH || buttonState == HIGH && digitalRead(bb2) == HIGH){
     digitalWrite(vr, LOW);
     digitalWrite(vg, HIGH);
-    
+
+    //het geluid moet een aantal keer klinken, hiervoor gebruiken we een for
     for (counter = 0; counter < 40; ++counter) {
+      tone(13, 294, 100);
+      delay(50);
+      noTone(13);
+      delay(50);
+     }
+    for (counter = 0; counter < 5; ++counter) {
+      tone(13, 294, 100);
+      delay(50);
+      noTone(13);
+      delay(50);
+      digitalWrite(vg, HIGH);
+      tone(13, 294, 100);
+      delay (50);
+      noTone(13);
+      delay(50);
+      digitalWrite(vg, LOW);
       tone(13, 294, 100);
       delay(50);
       noTone(13);

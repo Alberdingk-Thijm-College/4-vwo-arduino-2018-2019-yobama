@@ -237,6 +237,22 @@ void loop(){
       delay(50);
       noTone(13);
       delay(50);
+     }
+    for (counter = 0; counter < 5; ++counter) {
+      tone(13, 294, 100);
+      delay(50);
+      noTone(13);
+      delay(50);
+      digitalWrite(vg, HIGH);
+      tone(13, 294, 100);
+      delay (50);
+      noTone(13);
+      delay(50);
+      digitalWrite(vg, LOW);
+      tone(13, 294, 100);
+      delay(50);
+      noTone(13);
+      delay(50);
       buttonState = LOW;
      }
     Clr();
