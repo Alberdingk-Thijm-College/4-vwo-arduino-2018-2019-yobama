@@ -1,18 +1,18 @@
-int ledR1 = 1;
-int ledG1 = 2;
-int ledR2 = 3;
-int ledG2 = 4;
-int ledR3 = 5;
-int ledG3 = 6;
-int ledR4 = 7;
-int ledG4 = 8;
-int b1g = 10;
-int b1r = 11;
-int b2g = 12;
-int b2r = 13;
-int kb1 = A1;
-int kb2 = A2;
-int del = 1000;
+const int ledR1 = 1;
+const int ledG1 = 2;
+const int ledR2 = 3;
+const int ledG2 = 4;
+const int ledR3 = 5;
+const int ledG3 = 6;
+const int ledR4 = 7;
+const int ledG4 = 8;
+const int b1g = 10;
+const int b1r = 11;
+const int b2g = 12;
+const int b2r = 13;
+const int kb1 = A1;
+const int kb2 = A2;
+const int del = 1000;
 
 
 void setup()
@@ -165,7 +165,4 @@ void loop()
    BR();
    delay(del);
   }
-  
-
-
   }
